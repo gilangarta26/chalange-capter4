@@ -1,0 +1,202 @@
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.customHeader div .d-inline-block {
+  line-height: 2;
+}
+
+.customHeader a .headerTitle {
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  color: #ffc107;
+}
+
+.bgColor {
+  background-size: auto;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background-color: #9c835f;
+}
+
+/* Game Content */
+.gameContent {
+  background-size: auto;
+  position: relative;
+  text-align: center !important;
+  background-color: #9c835f;
+}
+
+.gameContent .row div h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "Bebas Neue";
+}
+
+.gameContent .row.contentImage .col-4 {
+  height: 75px;
+}
+
+.gameContent .row.contentImage img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.gameContent .row div.greyBox {
+  border-radius: 15%;
+}
+
+.gameContent .refresh {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.gameContent .row.contentImage .versus {
+  position: relative;
+  z-index: 1;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.gameContent .row.contentImage .versus h1 {
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(255, 0, 0);
+}
+
+.gameContent .row.contentImage .versus .result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotate(-32.5deg);
+  margin-left: -32.5px;
+}
+
+.gameContent .row.contentImage .versus .result h5 {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #33a03e;
+  border-radius: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffffff;
+  height: 55px;
+  padding: 10px 20px;
+}
+
+/* Smaller Device version */
+@media (min-width: 576px) and (max-width: 768px) {
+  .customHeader a .headerTitle {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .gameContent .row div h3 {
+    font-size: 24px;
+    font-stretch: extra-expanded;
+  }
+
+  .gameContent .row.contentImage .col-sm-3 {
+    height: 100px;
+  }
+
+  .gameContent .row.contentImage .col-sm-2 {
+    height: 100px;
+  }
+
+  .gameContent .row.contentImage img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .gameContent .row.contentImage .versus h1 {
+    font-size: 40px;
+  }
+
+  .gameContent .row.contentImage .versus .result h5 {
+    font-size: 28px;
+    height: 90px !important;
+  }
+}
+
+/* Tablet device version */
+@media (min-width: 768px) and (max-width: 992px) {
+  .customHeader a .headerTitle {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .gameContent {
+    top: 80px;
+  }
+
+  .gameContent .row div h3 {
+    font-size: 28px;
+    font-stretch: extra-expanded;
+  }
+
+  .gameContent .row.contentImage .col-sm-3 {
+    height: 150px;
+  }
+
+  .gameContent .row.contentImage img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .gameContent .row.contentImage .versus h1 {
+    font-size: 64px;
+  }
+
+  .gameContent .row.contentImage .versus .result h5 {
+    font-size: 28px;
+    height: 90px !important;
+  }
+}
+
+/* Desktop version */
+@media (min-width: 992px) {
+  .customHeader a .headerTitle {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .bgColor {
+    height: 105%;
+  }
+
+  .gameContent {
+    top: 80px;
+  }
+
+  .gameContent .row div h3 {
+    font-size: 28px;
+    font-stretch: extra-expanded;
+  }
+
+  .gameContent .row.contentImage .col-sm-3 {
+    height: 150px;
+  }
+
+  .gameContent .row.contentImage img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .gameContent .row.contentImage .versus h1 {
+    font-size: 80px;
+  }
+
+  .gameContent .row.contentImage .versus .result h5 {
+    font-size: 28px;
+    height: 100px !important;
+  }
+}
